@@ -149,15 +149,15 @@
   }
 }
 
-@media (max-width: 675px) {
+@media (max-width: 680px) {
   .heading-primary-main {
-    font-size: 2.3rem;
+    font-size: 2rem;
     font-weight: 600;
     margin-bottom: 1rem;
     letter-spacing: 0;
   }
   .heading-primary-sub {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   // .heading-secondary {
   //   font-size: 1.5rem;
@@ -168,24 +168,23 @@
     //position: block;
   }
   .composition {
+    margin-top: 1rem;
     &-photo {
-      width: 60%;
+      width: 25%;
 
       &-1 {
+        left: 35%;
+        top: 0;
+      }
+      &-2 {
+        right: 0;
         left: 0;
-        padding: 2rem;
-        margin: 2rem 0;
+        top: 0;
       }
 
-      &-2 {
-        left: 0;
-        padding: 2rem;
-        margin-bottom: 2rem;
-      }
       &-3 {
-        left: 0;
-        padding: 2rem;
-        margin: 2rem 0;
+        left: 70%;
+        top: 0;
       }
     }
   }
