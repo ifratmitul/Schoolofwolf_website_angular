@@ -1,0 +1,18 @@
+<header>
+    <div class="header-container container-flex">
+      <div class="site-title" routerLink="">
+        <img src="../../assets/img/mian_withoutBack.png">
+        <h2>{{title}}</h2>
+
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li routerLinkActive="active" [routerLinkActiveOptions] = "{exact:true}" class="nav-item"><a routerLink="" class="nav-link" >Home</a></li>
+          <li routerLinkActive="active" class="nav-item"><a routerLink="/awards" class="nav-link">Awards</a></li>
+          <li routerLinkActive="active" class="nav-item"><a routerLink="/players" class="nav-link">Players</a></li>
+
+  
+        </ul>
+      </nav>
+    </div>
+  </header>

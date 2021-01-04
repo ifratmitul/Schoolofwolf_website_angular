@@ -1,0 +1,224 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hbody {
+  height: 95vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(6, 63, 156, 1),
+      rgba(217, 197, 17, 0.6)
+    ),
+    url("../../assets/img/fifa.jpeg");
+  background-size: cover;
+  background-position: top;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 0 100%);
+  position: relative;
+}
+
+.text-box {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.heading-primary {
+  color: gold;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+}
+
+.heading-primary-main {
+  display: block;
+  font-size: 5.5rem;
+  font-weight: 700;
+  letter-spacing: 1.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 3s;
+  animation-iteration-count: 3;
+  animation-timing-function: ease-out;
+  transition: all 0.2s;
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
+  }
+
+  //animation-delay: 1s;
+}
+
+.heading-primary-sub {
+  display: block;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: 15px;
+  text-align: center;
+  animation: moveInRight 3s ease-out;
+  transition: all 0.2s;
+  &:hover {
+    text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
+  }
+}
+
+.section-about {
+  background-color: #f7f7ff;
+  padding: 15rem 0;
+  margin-top: -10vh;
+
+  .heading-secondary {
+    font-size: 3.5rem;
+    color: transparent;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5rem;
+    background-image: linear-gradient(
+      to right,
+      rgba(6, 63, 156, 1),
+      rgba(217, 197, 17, 0.6)
+    );
+
+    -webkit-background-clip: text;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: skewY(2deg);
+      text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
+    }
+  }
+}
+
+.u-centered-text {
+  text-align: center;
+  margin-bottom: 6rem;
+}
+
+.about-container {
+  padding: 0 30rem;
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: goldenrod;
+  }
+
+  .paragraph {
+    font-size: 1.4rem;
+    text-align: justify;
+    color: rgb(63, 60, 60);
+    &:not(:last-child) {
+      margin-bottom: 3rem;
+    }
+  }
+}
+
+.composition {
+  position: relative;
+  &-photo {
+    width: 55%;
+    // box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.4);
+    border-radius: 2px;
+    position: absolute;
+    z-index: 10;
+    transition: all 0.2s;
+
+    &-1 {
+      left: 15rem;
+      top: 8rem;
+      z-index: 15;
+    }
+
+    &-2 {
+      right: -7rem;
+      top: -2rem;
+    }
+
+    &-3 {
+      left: 10%;
+      top: 2rem;
+    }
+
+    &:hover {
+      transform: scale(1.5);
+      z-index: 20;
+      background-color: white;
+      box-shadow: 0 1.5rem 4rem rgba($color: #000000, $alpha: 0.4);
+    }
+  }
+}
+
+@media (max-width: 675px) {
+  .heading-primary-main {
+    font-size: 2.3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    letter-spacing: 0;
+  }
+  .heading-primary-sub {
+    font-size: 1.5rem;
+  }
+  // .heading-secondary {
+  //   font-size: 1.5rem;
+  //   font-weight: 400;
+  // }
+  .about-container {
+    padding: 0 1rem;
+    //position: block;
+  }
+  .composition {
+    &-photo {
+      width: 60%;
+
+      &-1 {
+        left: 0;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+
+      &-2 {
+        left: 0;
+        padding: 2rem;
+        margin-bottom: 2rem;
+      }
+      &-3 {
+        left: 0;
+        padding: 2rem;
+        margin: 2rem 0;
+      }
+    }
+  }
+
+  //other query for about section.
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
