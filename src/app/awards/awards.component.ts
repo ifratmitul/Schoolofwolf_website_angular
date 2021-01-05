@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-awards',
   templateUrl: './awards.component.html',
-  styleUrls: ['./awards.component.sass']
+  styleUrls: ['./awards.component.scss']
 })
 export class AwardsComponent implements OnInit {
 
+  @Input() awards : any;
   constructor() { }
 
   ngOnInit(): void {

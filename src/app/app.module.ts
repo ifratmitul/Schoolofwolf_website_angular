@@ -9,6 +9,8 @@ import { AwardsComponent } from './awards/awards.component';
 import { PlayersComponent } from './players/players.component';
 import { FooterComponent } from './footer/footer.component';
 import { PlayerItemComponent } from './players/player-item/player-item.component';
+import { FoudersComponent } from './fouders/fouders.component';
+import { AwardListComponent } from './awards/award-list/award-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { PlayerItemComponent } from './players/player-item/player-item.component
     AwardsComponent,
     PlayersComponent,
     FooterComponent,
-    PlayerItemComponent
+    PlayerItemComponent,
+    FoudersComponent,
+    AwardListComponent
   ],
   imports: [
     BrowserModule,

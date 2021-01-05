@@ -23,6 +23,13 @@ export class PlayersComponent implements OnInit {
     { id:11, name:'Mahdeen', active: true, position:'Forward' },
 
 ]
+
+foundingMember =[{id: 0, name: "Humayan Kabir", position:'Vice Captain'},
+                {id: 1, name: "Rafid Ahmed", position: "Self Proclaimed best Player"},
+                {id: 2, name: "Ifrat Mitul", position: "Manager"},
+                {id: 3, name: "Ayaz Alamgir", position: "Very relaxed winger"},
+                ]
+
   constructor() { }
 
   ngOnInit(): void {
