@@ -1,4 +1,4 @@
-.award-container {
+.player-container {
   padding: 6rem 20rem;
   width: 100%;
   height: 100%;
@@ -6,17 +6,18 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: -3rem;
 }
 
-// .founders-container {
-//   padding: 6rem 10rem;
-//   width: 100%;
-//   height: 100%;
-//   display: flex;
-//   flex-wrap: wrap;
-//   align-items: center;
-//   justify-content: center;
-// }
+.founders-container {
+  padding: 6rem 10rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 
 .u-centered-text {
   text-align: center;
@@ -45,12 +46,7 @@
       transform: skewY(2deg);
       text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
     }
-
-    @media (max-width: 800px) {
-      font-size: 2rem;
-    }
   }
-
   .player-para {
     color: gray;
     font-size: 1.1rem;
@@ -71,6 +67,7 @@
     align-items: center;
     justify-content: center;
     object-fit: cover;
+    margin-bottom: -2.5rem;
     img {
       width: 15rem;
       height: 15rem;

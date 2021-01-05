@@ -80,6 +80,7 @@ body {
     //text-transform: uppercase;
     display: inline-block;
     transition: all 0.2s;
+    border-bottom: 1px dotted gray;
   }
   &:hover,
   &:active {

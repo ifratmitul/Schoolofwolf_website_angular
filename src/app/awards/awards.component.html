@@ -19,18 +19,6 @@
     </div>
 </section>
 
-<!-- <section class="player-container row">
-
-
-    
-    <span *ngFor="let item of playerList" class="col-1-of-3">
-        <app-player-item [player] = "item" ></app-player-item>
-
-    </span>
-    
-
-</section> -->
-
 
 <section class="player-header">
     <div class="u-centered-text">
@@ -43,7 +31,54 @@
         Winning individual awards is great but at the end of the day its all about the team.  
        
         </p>
+        <p class="player-para">
+          
+[Note: All these awards are awarded by the Tournament Organizers]
+           
+            </p>
 
        
     </div>
 </section>
+
+<section class="player-container row">
+
+
+    
+    <span *ngFor="let item of awards" class="col-1-of-3">
+        <app-award-list [aw] = "item" ></app-award-list>
+
+    </span>
+    
+    <!-- <ul><li *ngFor="let item of playerList">{{item.name}}</li></ul> -->
+</section>
+
+
+<section class="player-header">
+    <div class="u-centered-text">
+        <h2 class="heading-secondary">
+            Team Achievements
+        </h2>
+        <p class="player-para">
+          
+            Its not possible to win every tournament we play but our playing style reflects quality & consistency. 
+            Most notable team achievements 365 Present League Cup & Runners up of VPG BD S1.
+       
+        </p>
+
+       
+    </div>
+</section>
+
+<section class="player-container row">
+
+
+    
+    <span *ngFor="let item of achv" class="col-1-of-3">
+        <app-award-list [aw] = "item" ></app-award-list>
+
+    </span>
+    
+    <!-- <ul><li *ngFor="let item of playerList">{{item.name}}</li></ul> -->
+</section>
+

@@ -6,16 +6,18 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: -3rem;
 }
 
-.founders-container {
-  padding: 6rem 10rem;
+.founder-container {
+  //  padding: 6rem 10rem;
   width: 100%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  margin-bottom: 10rem;
 }
 
 .u-centered-text {
@@ -50,12 +52,24 @@
   .player-para {
     color: gray;
     font-size: 1.1rem;
+    text-align: center;
+    @media (max-width: 800px) {
+      size: 0.5rem;
+      margin: 0 1rem;
+
+      text-align: justify;
+    }
   }
 }
 
 @media (max-width: 800px) {
   // width: 100% !important;
   .player-container {
+    padding: 0;
+    margin: 0 4rem;
+  }
+
+  .founder-container {
     padding: 0;
     margin: 0 4rem;
   }

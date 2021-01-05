@@ -26,8 +26,8 @@ export class PlayersComponent implements OnInit {
 
 foundingMember =[{id: 0, name: "Humayan Kabir", position:'Vice Captain'},
                 {id: 1, name: "Rafid Ahmed", position: "Self Proclaimed best Player"},
-                {id: 2, name: "Ifrat Mitul", position: "Manager"},
-                {id: 3, name: "Ayaz Alamgir", position: "Very relaxed winger"},
+                {id: 2, name: "Ifrat Mitul", position: "Captain"},
+                {id: 3, name: "Ayaz Alamgir", position: "Beshi relaxed winger"},
                 ]
 
   constructor() { }
