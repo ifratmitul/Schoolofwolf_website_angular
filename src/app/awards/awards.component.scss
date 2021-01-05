@@ -46,6 +46,10 @@
       transform: skewY(2deg);
       text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
     }
+
+    @media (max-width: 800px) {
+      font-size: 2.7rem;
+    }
   }
   .player-para {
     color: gray;
@@ -88,6 +92,6 @@
   // width: 100% !important;
   .player-container {
     padding: 0;
-    margin: 0 4rem;
+    margin: 0 5rem;
   }
 }
