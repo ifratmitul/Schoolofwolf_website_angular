@@ -1,1 +1,22 @@
-<p>players works!</p>
+
+<section class="player-header">
+    <div class="u-centered-text">
+        <h2 class="heading-secondary">
+            Our Players
+        </h2>
+        <p class="player-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi dolorum modi aliquid vitae porro? Accusamus rerum, corrupti maiores laboriosam recusandae tenetur aspernatur esse, ipsam placeat quis consectetur in asperiores quaerat.</p>
+</div>
+</section>
+
+<section class="player-container row">
+
+
+    
+    <span *ngFor="let item of playerList" class="col-1-of-3">
+
+        <app-player-item [player] = "item"></app-player-item>
+    </span>
+    
+    <!-- <ul><li *ngFor="let item of playerList">{{item.name}}</li></ul> -->
+</section>
+
