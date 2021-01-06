@@ -47,6 +47,11 @@
       transform: skewY(2deg);
       text-shadow: 0.5rem 1rem 2rem rgba($color: #000000, $alpha: 1);
     }
+
+    @media (max-width: 651px) {
+      font-size: 3rem;
+      letter-spacing: 0.6rem;
+    }
   }
 
   .player-para {
@@ -54,7 +59,7 @@
     font-size: 1.1rem;
     text-align: center;
     @media (max-width: 800px) {
-      size: 0.5rem;
+      //fontsize: 0.5rem;
       margin: 0 1rem;
 
       text-align: justify;
@@ -67,15 +72,16 @@
   .player-container {
     padding: 0;
 
-    margin: 0 5rem;
+    //margin: 0 5rem;
   }
 
   .founder-container {
-    padding: 0;
-    margin: 0 5rem;
+    // padding: 0 2rem;
+    // align-items: center;
+    // text-align: center;
   }
-  .heading-secondary {
-    font-size: 2rem;
-    letter-spacing: 0.2;
-  }
+  // .heading-secondary {
+  //   font-size: 2.2rem;
+  //   letter-spacing: 0.7rem;
+  // }
 }

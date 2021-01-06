@@ -177,7 +177,8 @@ p {
   top: 0px;
   position: relative;
   max-width: 262px;
-  background-color: #ffffff;
+  background-color: white;
+
   border-radius: 4px;
   padding: 32px 24px;
   margin: 12px;
@@ -186,6 +187,12 @@ p {
   border: 1px solid #cccccc;
   text-align: center;
   color: #0c3d99;
+  @media (max-width: 650px) {
+    margin: 1rem 0 1.5rem 7.5rem;
+    // :not(:last-child) {
+    //   margin: 1rem 0 1.5rem 7.5rem;
+    // }
+  }
 
   .go-corner {
     background-color: #00838d;
@@ -224,7 +231,10 @@ p {
     opacity: 1;
   }
   h3 {
-    color: #0c3d99;
+    color: gold;
+  }
+  h4 {
+    color: goldenrod;
   }
   @media (max-width: 800px) {
     color: goldenrod;

@@ -186,6 +186,10 @@ p {
   border: 1px solid #cccccc;
   text-align: center;
   color: white;
+
+  @media (max-width: 650px) {
+    margin: 1rem 0 1.5rem 7.5rem;
+  }
   h3 {
     color: wheat;
   }
