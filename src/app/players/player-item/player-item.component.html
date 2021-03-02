@@ -8,6 +8,7 @@
 
     <h3>{{player.name}}</h3>
     <h4>{{player.position}}</h4>
+    <h5 *ngIf="player.honorableMention">{{player.honorableMention}}</h5>
     <!-- <h4>Status: {player.active ? 'Action' : 'meh'}</h4> -->
     <div class="dimmer"></div>
     <div class="go-corner" href="#">
